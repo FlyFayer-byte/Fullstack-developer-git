@@ -9,3 +9,10 @@ body {
 main {
   flex: 1; /* Заповнює весь доступний простір між header і footer */
 }
+
+code {
+  background-color: black;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
