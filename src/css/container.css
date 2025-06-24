@@ -5,13 +5,41 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+.hero-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.course-title {
+  font-size: 20px;
+  margin: 12px 0;
+  text-align: center;
+}
+
+.container p {
+  margin-bottom: 8px;
+}
+
+.header-title p {
+  margin: 0;
+}
+
+.hero-section .container,
+.course-section .container {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
+  .nav-list {
+    display: flex;
+  }
 }
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .container {

@@ -15,6 +15,7 @@
 .nav-logo img {
   width: 40px;
   height: 40px;
+  min-width: 40px;
   align-items: center;
   text-align: center;
 }
@@ -22,32 +23,26 @@
   font-size: 24px;
   font-weight: bold;
   color: black;
-  margin-left: 10px;}
+  margin-left: 10px;
+}
+
 /* Navigation List */
 .nav-list {
-  display: flex;
-  max-height: 26px;
-  gap: 10px;
+  display: none;
+  gap: 4px;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .nav-item {
-  min-width: 70px;
   text-align: center;
-  border: none;
+  align-items: center;
+  border: 2px solid black;
   border-radius: 4px;
   padding: 4px 8px;
-  background-color: darkgrey;
-}
-.nav-item:hover {
-  background-color: grey;
-}
-.nav-item.active {
-  background-color: black;
-  color: white;
+  background-color: white;
 }
 .nav-item a {
-  text-decoration: none;
-  color: azure;
+  color: black;
+  font-weight: bold;
 }
