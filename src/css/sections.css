@@ -5,6 +5,12 @@
   padding: 16px 0;
 }
 
+.header-section {
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
 .footer-section {
-  background-color: #f8f9fa;
-} 
+  display: flex;
+  background-color: black;
+  color: white;
+}
