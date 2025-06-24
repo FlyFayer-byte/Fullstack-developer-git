@@ -1,31 +1,12 @@
 .header-section {
-  padding: 16px 0;
-  background-color: #f8f9fa;
-  color: #343a40;
-  border-bottom: 1px solid #dee2e6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .hero-section {
-  padding: 16px 0;
 }
 
 
 .footer-section {
-  padding: 16px 0;
-  background-color: #f8f9fa;
-  color: #343a40;
-  border-top: 1px solid #dee2e6;
-  text-align: center;
 }
 
-.course-html,
-.course-css,
-.course-js {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: #f0f0f0;
-  color: #333;
+.course-section {
 }

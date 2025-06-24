@@ -1,13 +1,5 @@
-/* Базове оформлення */
+html,
 body {
-  font-family: Arial, sans-serif;
-  background: #fafafa;
-  color: #333;
-  padding: 1rem;
-}
-
-/* Приклад контейнера для контенту */
-main {
-  background: #fff;
-
+  height: 100%;
+  background-color: #f0f0f0;
 }

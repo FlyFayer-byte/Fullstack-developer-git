@@ -1,32 +1,19 @@
 /* Styles for Mobile devices */
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
-  max-width: 375px;
+.container {
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
-  gap: 16px;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  color: #333333;
-  line-height: 1.5;
-  border-bottom: 1px solid #e0e0e0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-
+  padding: 0 15px;
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  .hero-container {
+  .container {
     max-width: 768px;
   }
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
-  .hero-container {
+  .container {
     max-width: 1200px;
   }
 }
