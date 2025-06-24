@@ -1,5 +1,11 @@
 html,
 body {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   background-color: #f0f0f0;
+}
+
+main {
+  flex: 1; /* Заповнює весь доступний простір між header і footer */
 }

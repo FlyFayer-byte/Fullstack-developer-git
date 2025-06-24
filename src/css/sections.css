@@ -1,12 +1,10 @@
-.header-section {
+.header-section,
+.hero-section,
+.course-section,
+.footer-section {
+  padding: 16px 0;
 }
-
-.hero-section {
-}
-
 
 .footer-section {
-}
-
-.course-section {
-}
+  background-color: #f8f9fa;
+} 
