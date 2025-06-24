@@ -3,4 +3,7 @@
 .course-css,
 .course-js {
   padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #f0f0f0;
+  color: #333;
 }
