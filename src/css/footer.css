@@ -1,7 +1,8 @@
-/* .footer {
+.footer {
+  margin-top: auto;
   padding: 20px 0;
 }
-.footer-desc {
+/* .footer-desc {
   text-align: center;
 }
 .footer-link {
