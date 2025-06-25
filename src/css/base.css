@@ -4,7 +4,6 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: #f0f0f0;
-  overflow: hidden; /* Прибирає скролбар */
 }
 
 main {
@@ -12,8 +11,10 @@ main {
 }
 
 code {
-  background-color: black;
-  color: white;
-  padding: 2px 4px;
-  border-radius: 4px;
+  font-family: "Fira Code", monospace;
+  font-size: 0.875em;
+  background-color: rgba(135, 131, 120, 0.15);
+  color: #2f2f37;
+  padding: 2px 0.5ch;
+  border-radius: 3px;
 }

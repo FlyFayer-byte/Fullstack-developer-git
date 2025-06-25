@@ -1,12 +1,22 @@
 .header-section,
 .hero-section,
-.course-section,
 .footer-section {
   padding: 16px 0;
 }
 
 .header-section {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.course-section {
+  padding: 0;
+}
+
+.course-container {
+  display: flex;
+  padding: 16px 0;
+  margin: 0 auto;
+  gap: 4px;
 }
 
 .footer-section {

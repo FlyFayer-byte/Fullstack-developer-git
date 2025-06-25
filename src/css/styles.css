@@ -4,6 +4,7 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./left-aside.css');
 @import url('./sections.css');
 @import url('./container.css');
 /* @import url('./footer.css'); */
