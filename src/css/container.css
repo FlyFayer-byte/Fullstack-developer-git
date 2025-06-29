@@ -88,7 +88,7 @@ pre.ql-syntax {
 @media only screen and (min-width: 1200px) {
   .course-container,
   .container {
-    max-width: 1200px;
+    max-width: 14400px;
   }
 
   .course-container {
