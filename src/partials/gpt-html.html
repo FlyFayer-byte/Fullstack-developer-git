@@ -1,0 +1,5256 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    /* max-width: 800px; */
+    margin: 2em auto;
+    padding: 0 1em;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+  }
+  h1 {
+    color: crimson;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  h2 {
+    color: #005a9c;
+  }
+  pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 1em;
+    overflow-x: auto;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  code {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  section {
+    /* margin-bottom: 2em; */
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+  }
+  .css-explanation {
+    font-style: italic;
+    color: #555;
+    margin-top: 0.5em;
+  }
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  dl {
+    margin: 0;
+  }
+  dt {
+    font-weight: bold;
+    margin-top: 0.5em;
+  }
+  dd {
+    margin-left: 1.5em;
+    margin-bottom: 0.8em;
+  }
+  .tag-name {
+    background-color: #e1f5fe;
+    color: #0277bd;
+    padding: 0.2em 0.5em;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+</style>
+
+<section class="content">
+  <!--Перша категорія: Структура документа-->
+  <h1>Перша категорія: Структура документа</h1>
+  <!--HTML тег: <!DOCTYPE>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;!DOCTYPE&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Декларація типу документа, яка повідомляє браузеру, яку версію HTML
+        використовує документ. У HTML5 вона виглядає просто як
+        <code>&lt;!DOCTYPE html&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <p>
+        Це декларативний тег, який не має візуального відображення, тому CSS не
+        застосовується.
+      </p>
+    </section>
+
+    <section>
+      <h2>Пояснення CSS-властивостей</h2>
+      <p>Не застосовується.</p>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>службовий</dd>
+        <dt>Семантичний</dt>
+        <dd>ні</dd>
+        <dt>Вміст</dt>
+        <dd>немає вмісту</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <p>Не підтримує атрибутів.</p>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Не має значення для доступності, але обов’язкова для коректного
+        рендерингу сторінки.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Відсутність декларації <code>&lt;!DOCTYPE html&gt;</code> призводить
+          до запуску браузером режиму сумісності (quirks mode).
+        </li>
+        <li>
+          Некоректна або застаріла декларація може спричинити проблеми з
+          відображенням.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <p>
+        Завжди використовувати <code>&lt;!DOCTYPE html&gt;</code> на початку
+        HTML-документу для забезпечення стандартного режиму рендерингу.
+      </p>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Використовується спільно з тегами <code>&lt;html&gt;</code>,
+        <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code> як частина базової
+        структури документа.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>Немає.</p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>
+        HTML5 (сучасна), раніше використовували складніші декларації в
+        HTML4/XHTML.
+      </p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Не має прямого впливу, але необхідна для правильного парсингу документа.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: Докладніше про <code>&lt;!DOCTYPE html&gt;</code></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/syntax.html#the-doctype"
+            target="_blank"
+            rel="noopener noreferrer"
+            >W3C HTML5 Spec — Doctype</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <html>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;html&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Кореневий елемент HTML-документа. Всі інші теги мають бути вкладені
+        всередині <code>&lt;html&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Заголовок сторінки&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Вміст сторінки&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>display: block;</code></pre>
+      <div class="css-explanation">
+        <ul>
+          <li>
+            <code>display: block;</code> — хоча <code>&lt;html&gt;</code> не
+            відображається безпосередньо, він поводиться як блочний контейнер
+            для всієї сторінки.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний (кореневий)</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>лише <code>&lt;head&gt;</code> і <code>&lt;body&gt;</code></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>
+          <code>id</code>, <code>class</code>, <code>style</code>,
+          <code>title</code>, <code>lang</code>, <code>dir</code>,
+          <code>data-*</code>
+        </dd>
+        <dt>Специфічні атрибути</dt>
+        <dd>
+          <ul>
+            <li>
+              <code>lang</code> — задає мову документа (наприклад,
+              <code>lang="uk"</code> для української).
+            </li>
+            <li><code>xmlns</code> (в XML/MathML)</li>
+          </ul>
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Встановлення атрибута <code>lang</code> є важливим для доступності,
+        оскільки допомагає екранним читачам правильно вимовляти текст.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>
+        Підтримується усіма браузерами, обов'язковий для коректної структури
+        документа.
+      </p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Відсутність або неправильне вкладення <code>&lt;head&gt;</code> та
+          <code>&lt;body&gt;</code>.
+        </li>
+        <li>
+          Використання кількох <code>&lt;html&gt;</code> елементів на сторінці.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <p>
+        Завжди використовуйте <code>lang</code>, правильно структуруйте
+        <code>&lt;head&gt;</code> і <code>&lt;body&gt;</code> всередині
+        <code>&lt;html&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Містить лише два дочірні елементи: <code>&lt;head&gt;</code> та
+        <code>&lt;body&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>Немає.</p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>HTML 2.0 і вище. У HTML5 тег став ще простішим.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Безпосереднього впливу немає, але правильне використання
+        <code>lang</code> і структурної розмітки в
+        <code>&lt;html&gt;</code> впливає на індексацію.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;html&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/semantics.html#the-html-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;html&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+
+    <!--HTML тег: <html>-->
+
+    <h1>HTML тег: <span class="tag-name">&lt;html&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Кореневий елемент HTML-документа. Всі інші теги мають бути вкладені
+        всередині <code>&lt;html&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Заголовок сторінки&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Вміст сторінки&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>display: block;</code></pre>
+      <div class="css-explanation">
+        <ul>
+          <li>
+            <code>display: block;</code> — хоча <code>&lt;html&gt;</code> не
+            відображається безпосередньо, він поводиться як блочний контейнер
+            для всієї сторінки.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний (кореневий)</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>лише <code>&lt;head&gt;</code> і <code>&lt;body&gt;</code></dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>
+          <code>id</code>, <code>class</code>, <code>style</code>,
+          <code>title</code>, <code>lang</code>, <code>dir</code>,
+          <code>data-*</code>
+        </dd>
+        <dt>Специфічні атрибути</dt>
+        <dd>
+          <ul>
+            <li>
+              <code>lang</code> — задає мову документа (наприклад,
+              <code>lang="uk"</code> для української).
+            </li>
+            <li><code>xmlns</code> (в XML/MathML)</li>
+          </ul>
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Встановлення атрибута <code>lang</code> є важливим для доступності,
+        оскільки допомагає екранним читачам правильно вимовляти текст.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>
+        Підтримується усіма браузерами, обов'язковий для коректної структури
+        документа.
+      </p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Відсутність або неправильне вкладення <code>&lt;head&gt;</code> та
+          <code>&lt;body&gt;</code>.
+        </li>
+        <li>
+          Використання кількох <code>&lt;html&gt;</code> елементів на сторінці.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <p>
+        Завжди використовуйте <code>lang</code>, правильно структуруйте
+        <code>&lt;head&gt;</code> і <code>&lt;body&gt;</code> всередині
+        <code>&lt;html&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Містить лише два дочірні елементи: <code>&lt;head&gt;</code> та
+        <code>&lt;body&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>Немає.</p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>HTML 2.0 і вище. У HTML5 тег став ще простішим.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Безпосереднього впливу немає, але правильне використання
+        <code>lang</code> і структурної розмітки в
+        <code>&lt;html&gt;</code> впливає на індексацію.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;html&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/semantics.html#the-html-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;html&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <head>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;head&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;head&gt;</code> містить метадані документа: заголовок,
+        кодування, підключення стилів, скриптів, і іншу службову інформацію. Не
+        відображається на сторінці напряму.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Заголовок сторінки&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;script src="main.js"&gt;&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>display: none;</code></pre>
+      <div class="css-explanation">
+        <p>
+          Вміст <code>&lt;head&gt;</code> не відображається візуально, тому він
+          має <code>display: none;</code>.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>службовий (невидимий)</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>
+          лише певні метаелементи: <code>&lt;title&gt;</code>,
+          <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code>,
+          <code>&lt;style&gt;</code>, <code>&lt;script&gt;</code>,
+          <code>&lt;base&gt;</code>, <code>&lt;noscipt&gt;</code>
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>
+          не рекомендовано використовувати, але технічно можливі:
+          <code>id</code>, <code>class</code>, <code>lang</code>
+        </dd>
+        <dt>Специфічні атрибути</dt>
+        <dd>немає</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Непряма. Правильне використання <code>&lt;meta charset&gt;</code>,
+        <code>&lt;title&gt;</code> і мови в
+        <code>&lt;html lang&gt;</code> допомагає скрин-рідерам краще
+        орієнтуватися.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>
+        Повна підтримка всіма сучасними браузерами. Обов’язковий для
+        повноцінного HTML-документу.
+      </p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Додавання в <code>&lt;head&gt;</code> вмісту, який не є метаданими
+          (наприклад, <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code> тощо).
+        </li>
+        <li>Використання більше одного <code>&lt;title&gt;</code>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>Використовуйте лише дозволені елементи.</li>
+        <li>
+          Завжди додавайте <code>&lt;meta charset="UTF-8"&gt;</code> на початку.
+        </li>
+        <li>
+          Вказуйте <code>&lt;title&gt;</code> — він відображається в браузерній
+          вкладці.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Повинен бути дочірнім елементом <code>&lt;html&gt;</code>, і має бути
+        перед <code>&lt;body&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>Немає.</p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Використовується у всіх версіях HTML, від HTML2 до HTML5.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Ключовий. <code>&lt;title&gt;</code> та
+        <code>&lt;meta name="description"&gt;</code> усередині
+        <code>&lt;head&gt;</code> безпосередньо впливають на індексацію в
+        Google.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;head&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/semantics.html#the-head-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;head&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <title>-->
+  <!--Це ключовий елемент SEO, і теж частина розділу head.-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;title&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Визначає заголовок документа, який відображається у вкладці браузера, а
+        також використовується у результатах пошуку. Є обов’язковим елементом у
+        <code>&lt;head&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;head&gt;
+      &lt;title&gt;Моя перша сторінка&lt;/title&gt;
+    &lt;/head&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <p>
+        CSS не застосовується — елемент невидимий і не рендериться на сторінці.
+      </p>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>службовий, текстовий</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>тільки текст</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <p>
+        Не має жодного специфічного чи глобального атрибута (використання
+        <code>class</code>, <code>id</code> — не рекомендоване).
+      </p>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Екранні читачі використовують <code>&lt;title&gt;</code> для
+        ідентифікації сторінки. Користувачі теж бачать його у вкладці, тому його
+        важливо чітко формулювати.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується повсюдно. Обов'язковий згідно з HTML-специфікацією.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Відсутній <code>&lt;title&gt;</code> у документі — погано для SEO.
+        </li>
+        <li>
+          Використання більше одного <code>&lt;title&gt;</code> у
+          <code>&lt;head&gt;</code>.
+        </li>
+        <li>Занадто довгий або нерелевантний текст.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Довжина заголовка — до 60 символів для оптимального відображення в
+          пошукових системах.
+        </li>
+        <li>Має бути унікальним для кожної сторінки.</li>
+        <li>Перші слова мають бути найбільш значущими.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Використовується тільки всередині <code>&lt;head&gt;</code>, має бути
+        лише один.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Немає. Для виведення назви на сторінці використовуйте
+        <code>&lt;h1&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>HTML 2.0 і вище. У HTML5 все ще обов’язковий елемент.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Один з головних елементів для SEO. Використовується пошуковими системами
+        для формування заголовку в результатах видачі.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;title&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/semantics.html#the-title-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;title&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <meta>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;meta&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Службовий елемент для надання метаданих про HTML-документ: кодування,
+        опис, ключові слова, автор, viewport, соціальні мережі тощо.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклади</h2>
+      <pre><code>&lt;meta charset="UTF-8"&gt;
+    &lt;meta name="description" content="Це сторінка про HTML"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="author" content="FlyFayer"&gt;
+    &lt;meta property="og:title" content="Моя HTML сторінка"&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <p>CSS не застосовується. Елемент не відображається на сторінці.</p>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>службовий, самозакривний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>не має</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt><code>charset</code></dt>
+        <dd>
+          Визначає кодування сторінки, наприклад:
+          <code>&lt;meta charset="UTF-8"&gt;</code>.
+        </dd>
+
+        <dt><code>name</code></dt>
+        <dd>
+          Ім’я метаданих: <code>description</code>, <code>keywords</code>,
+          <code>viewport</code>, <code>author</code> тощо.
+        </dd>
+
+        <dt><code>content</code></dt>
+        <dd>
+          Значення для атрибута <code>name</code> або <code>http-equiv</code>.
+        </dd>
+
+        <dt><code>http-equiv</code></dt>
+        <dd>
+          Замість HTTP-заголовків (наприклад: <code>refresh</code>,
+          <code>content-security-policy</code>).
+        </dd>
+
+        <dt><code>property</code></dt>
+        <dd>
+          Для Open Graph (Facebook, LinkedIn), наприклад: <code>og:title</code>,
+          <code>og:image</code>.
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Непряма. Важливо для налаштування масштабування (<code>viewport</code>)
+        та правильної інтерпретації мови (<code>charset</code>).
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>
+        Повна підтримка всіма браузерами. Деякі атрибути можуть ігноруватися,
+        якщо вказані некоректно.
+      </p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Відсутність <code>charset</code> на початку
+          <code>&lt;head&gt;</code> — може спричинити проблеми з відображенням
+          символів.
+        </li>
+        <li>
+          Використання застарілих значень: <code>keywords</code> більше не має
+          SEO-ваги.
+        </li>
+        <li>Плутанина між <code>name</code> і <code>property</code>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Завжди вказуйте <code>&lt;meta charset="UTF-8"&gt;</code> першою в
+          <code>&lt;head&gt;</code>.
+        </li>
+        <li>
+          Використовуйте <code>description</code> з чітким змістом для SEO.
+        </li>
+        <li>Налаштовуйте <code>viewport</code> для адаптивності.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Застосовується лише в межах <code>&lt;head&gt;</code>. Використовується
+        разом із <code>&lt;title&gt;</code>, <code>&lt;link&gt;</code>,
+        <code>&lt;script&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Немає прямих альтернатив. Для Open Graph і Twitter Cards
+        використовується аналогічна синтаксична форма.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>
+        HTML 2.0 і вище. <code>charset</code> у короткій формі (<code
+          >&lt;meta charset="UTF-8"&gt;</code
+        >) з’явився в HTML5.
+      </p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Високий. Важливо для <code>description</code>, <code>viewport</code>,
+        Open Graph/SEO структурованих даних. <code>keywords</code> більше не
+        враховуються пошуковими системами.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;meta&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;meta&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <link>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;link&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;link&gt;</code> використовується для підключення зовнішніх
+        ресурсів, найчастіше — таблиць стилів (<code>CSS</code>), іконок
+        (favicon), шрифтів, та ін. Розташовується лише в
+        <code>&lt;head&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклади</h2>
+      <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link rel="apple-touch-icon" href="/icon.png"&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <p>
+        Не має стилів, не рендериться на сторінці. Впливає лише на поведінку
+        браузера.
+      </p>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>службовий, самозакривний</dd>
+        <dt>Семантичний</dt>
+        <dd>ні</dd>
+        <dt>Вміст</dt>
+        <dd>не має</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt><code>rel</code></dt>
+        <dd>
+          Визначає тип зв'язку з ресурсом. Наприклад: <code>stylesheet</code>,
+          <code>icon</code>, <code>preload</code>.
+        </dd>
+
+        <dt><code>href</code></dt>
+        <dd>Шлях до зовнішнього ресурсу (URL).</dd>
+
+        <dt><code>type</code></dt>
+        <dd>
+          Тип MIME (наприклад, <code>text/css</code>,
+          <code>image/x-icon</code>).
+        </dd>
+
+        <dt><code>media</code></dt>
+        <dd>
+          Задає, для яких медіа-типів застосовується стиль (наприклад,
+          <code>screen</code>, <code>print</code>).
+        </dd>
+
+        <dt><code>as</code></dt>
+        <dd>
+          Для <code>rel="preload"</code>: вказує тип ресурсу
+          (<code>script</code>, <code>style</code>, <code>font</code>).
+        </dd>
+
+        <dt><code>crossorigin</code></dt>
+        <dd>Задає політику CORS при завантаженні ресурсів з інших доменів.</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Непряма. <code>rel="icon"</code> використовується браузером для
+        відображення іконки сторінки, що зручно для користувачів.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>
+        Широко підтримується всіма сучасними браузерами. Поведінка залежить від
+        значення <code>rel</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання без обов’язкових атрибутів <code>rel</code> або
+          <code>href</code>.
+        </li>
+        <li>Невірне MIME-значення в <code>type</code>.</li>
+        <li>Неправильне розташування поза <code>&lt;head&gt;</code>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Підключайте CSS через <code>rel="stylesheet"</code> з коректним
+          <code>href</code>.
+        </li>
+        <li>
+          Для іконок використовуйте <code>rel="icon"</code> з
+          <code>type="image/x-icon"</code>.
+        </li>
+        <li>
+          Використовуйте <code>preload</code> та <code>preconnect</code> для
+          оптимізації продуктивності.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Зазвичай використовується разом із <code>&lt;style&gt;</code>,
+        <code>&lt;meta&gt;</code>, <code>&lt;script&gt;</code> у
+        <code>&lt;head&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>Для вбудованих стилів — тег <code>&lt;style&gt;</code>.</p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>
+        Підтримується з HTML 2.0. У HTML5 отримав нові значення
+        <code>rel</code> (наприклад, <code>preload</code>,
+        <code>dns-prefetch</code>).
+      </p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Опосередкований. Важливий для завантаження стилів, шрифтів, іконок — усе
+        це впливає на продуктивність, що враховується пошуковими системами.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;link&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/semantics.html#the-link-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;link&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <style>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;style&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;style&gt;</code> дозволяє вставити CSS-стилі прямо в
+        HTML-документ. Розташовується переважно в <code>&lt;head&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;head&gt;
+  &lt;style&gt;
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial;
+    }
+    h1 {
+      color: #333;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <p>
+        Не застосовується. Сам тег не стилізується — він містить CSS-код для
+        інших елементів.
+      </p>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>службовий</dd>
+        <dt>Семантичний</dt>
+        <dd>умовно</dd>
+        <dt>Вміст</dt>
+        <dd>текстовий вміст — CSS-правила</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt><code>type</code></dt>
+        <dd>
+          Тип контенту. Зазвичай <code>text/css</code>. У HTML5 можна опускати.
+        </dd>
+
+        <dt><code>media</code></dt>
+        <dd>
+          Задає, для яких пристроїв або умов застосовуються стилі (наприклад,
+          <code>screen</code>, <code>print</code>).
+        </dd>
+
+        <dt><code>scoped</code> (застарілий)</dt>
+        <dd>
+          Призначався для обмеження стилів до батьківського елемента. Браузерами
+          не підтримується.
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Не впливає напряму, але стилі можуть суттєво покращити доступність
+        інтерфейсу.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Повна підтримка всіх сучасних браузерів.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Розміщення CSS поза <code>&lt;style&gt;</code> або
+          <code>&lt;head&gt;</code>.
+        </li>
+        <li>Забутий закриваючий тег <code>&lt;/style&gt;</code>.</li>
+        <li>Неправильний синтаксис CSS усередині тегу.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>Використовуйте для прототипів або невеликих сторінок.</li>
+        <li>
+          Для великих проєктів використовуйте зовнішні таблиці стилів
+          (<code>&lt;link&gt;</code>).
+        </li>
+        <li>Не вставляйте JS у <code>&lt;style&gt;</code>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Замість нього часто використовується <code>&lt;link&gt;</code> для
+        підключення зовнішніх CSS-файлів.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p><code>&lt;link&gt;</code> для зовнішніх стилів.</p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>
+        HTML 3.2 і вище. У HTML5 <code>type="text/css"</code> не обов’язковий.
+      </p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Непрямий. Швидкість відображення стилів може впливати на показники
+        сторінки в пошукових системах.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;style&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/semantics.html#the-style-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;style&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <script>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;script&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;script&gt;</code> використовується для вставки або
+        підключення JavaScript-коду до HTML-документу. Може знаходитись у
+        <code>&lt;head&gt;</code> або <code>&lt;body&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклади</h2>
+      <pre><code>&lt;!-- Вбудований скрипт --&gt;
+&lt;script&gt;
+  console.log("Привіт, JavaScript!");
+&lt;/script&gt;
+
+&lt;!-- Зовнішній файл --&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+
+&lt;!-- З відкладеним виконанням --&gt;
+&lt;script src="main.js" defer&gt;&lt;/script&gt;
+
+&lt;!-- Асинхронне завантаження --&gt;
+&lt;script src="ads.js" async&gt;&lt;/script&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <p>Не рендериться. Не має стилів.</p>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>службовий</dd>
+        <dt>Семантичний</dt>
+        <dd>ні</dd>
+        <dt>Вміст</dt>
+        <dd>JS-код або зовнішнє посилання</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt><code>src</code></dt>
+        <dd>Шлях до зовнішнього JavaScript-файлу.</dd>
+
+        <dt><code>type</code></dt>
+        <dd>
+          Тип скрипту, зазвичай <code>text/javascript</code>. У HTML5 можна не
+          вказувати.
+        </dd>
+
+        <dt><code>defer</code></dt>
+        <dd>
+          Виконує скрипт після повного завантаження документа, зберігаючи
+          порядок.
+        </dd>
+
+        <dt><code>async</code></dt>
+        <dd>
+          Завантажує скрипт асинхронно — виконується відразу після завантаження,
+          незалежно від інших.
+        </dd>
+
+        <dt><code>nomodule</code></dt>
+        <dd>
+          Скрипт не виконується в браузерах, які підтримують ES6-модулі. Для
+          сумісності зі старими браузерами.
+        </dd>
+
+        <dt><code>crossorigin</code></dt>
+        <dd>
+          Політика CORS (наприклад: <code>anonymous</code>,
+          <code>use-credentials</code>).
+        </dd>
+
+        <dt><code>integrity</code></dt>
+        <dd>Хеш для перевірки цілісності скрипта (SRI).</dd>
+
+        <dt><code>referrerpolicy</code></dt>
+        <dd>Вказує, як обробляється HTTP-заголовок <code>Referer</code>.</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        JS може покращувати або погіршувати доступність, залежно від реалізації
+        (наприклад, модальні вікна без фокусу = ❌).
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>
+        Повна підтримка всіх сучасних браузерів. <code>async</code> і
+        <code>defer</code> підтримуються з IE9+.
+      </p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Підключення скрипта без <code>defer</code> у
+          <code>&lt;head&gt;</code>, що блокує рендеринг.
+        </li>
+        <li>
+          Забутий закриваючий тег або неправильний шлях у <code>src</code>.
+        </li>
+        <li>Змішування <code>async</code> і <code>defer</code> одночасно.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>Для зовнішніх скриптів — ставити <code>defer</code>.</li>
+        <li>
+          Уникати вбудованих скриптів, якщо можливо — краще тримати їх в окремих
+          файлах.
+        </li>
+        <li>
+          Використовуйте SRI (Subresource Integrity) для сторонніх скриптів.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Може йти разом із <code>&lt;style&gt;</code>,
+        <code>&lt;noscript&gt;</code>, <code>&lt;link&gt;</code> у
+        <code>&lt;head&gt;</code> або перед <code>&lt;/body&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        <code>&lt;noscript&gt;</code> — для випадків, коли JavaScript вимкнений
+        у браузері.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>
+        З HTML 3.2. У HTML5 — атрибути <code>async</code>, <code>defer</code>,
+        <code>nomodule</code>, <code>type="module"</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        JavaScript не повинен блокувати основний контент. Google індексує
+        динамічні сторінки, але не завжди швидко.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;script&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/scripting.html#the-script-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;script&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--🔹 Ми завершили блок тегів, які використовуються в <head>-->
+  <h1>
+    🔹 Ми завершили блок тегів, які використовуються в <strong>head</strong>.
+  </h1>
+
+  <!--HTML тег: <body>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;body&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;body&gt;</code> містить увесь вміст сторінки, який
+        бачить користувач: текст, зображення, посилання, відео, розмітку тощо.
+        Це основний контейнер візуального вмісту HTML-документа.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;!DOCTYPE html&gt;
+    &lt;html lang="uk"&gt;
+      &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Приклад сторінки&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Привіт, світ!&lt;/h1&gt;
+        &lt;p&gt;Це перший параграф у тілі документа.&lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <p>Залежно від браузера, але типово:</p>
+      <pre><code>body {
+      display: block;
+      margin: 8px;
+    }</code></pre>
+      <p class="css-explanation">
+        Цей відступ (margin) часто обнуляється у CSS-ресетах або нормалізаторах.
+      </p>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>
+          весь візуальний вміст сторінки (напр. <code>&lt;header&gt;</code>,
+          <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, текст, медіа
+          тощо)
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt><code>onload</code></dt>
+        <dd>Викликає JavaScript при завантаженні сторінки.</dd>
+
+        <dt><code>onunload</code></dt>
+        <dd>
+          Викликає функцію при закритті сторінки (рідко використовується).
+        </dd>
+
+        <dt>
+          <code>background</code>, <code>bgcolor</code>, <code>text</code>,
+          <code>link</code> (застарілі)
+        </dt>
+        <dd>
+          HTML 4 атрибути для стилізації — сьогодні слід уникати, замість цього
+          використовувати CSS.
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Сам по собі не впливає на доступність, але правильна структура всередині
+        <code>&lt;body&gt;</code> (напр. <code>&lt;main&gt;</code>, заголовки,
+        області навігації) є ключовою.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>
+        Підтримується в усіх браузерах, починаючи з найперших версій.
+        Обов’язковий елемент.
+      </p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання кількох <code>&lt;body&gt;</code> на одній сторінці (❌
+          недопустимо).
+        </li>
+        <li>
+          Неправильне розміщення скриптів до закриття <code>&lt;body&gt;</code>.
+        </li>
+        <li>
+          Неправильна вкладеність: <code>&lt;body&gt;</code> не може бути
+          вкладеним у інші елементи.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте <code>&lt;main&gt;</code>, <code>&lt;header&gt;</code>,
+          <code>&lt;footer&gt;</code> для розмітки вмісту.
+        </li>
+        <li>
+          Поміщайте скрипти перед закриттям <code>&lt;/body&gt;</code>, якщо не
+          використовуєте <code>defer</code>.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Йде після <code>&lt;head&gt;</code>. Включає:
+        <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+        <code>&lt;footer&gt;</code>, <code>&lt;section&gt;</code>, інше.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>Немає — <code>&lt;body&gt;</code> обов’язковий елемент HTML.</p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Усі версії HTML (з 2.0 до HTML5).</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Не напряму, але правильна структура вмісту всередині
+        <code>&lt;body&gt;</code> критична для SEO.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;body&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-body-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;body&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <header>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;header&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;header&gt;</code> визначає секцію заголовка документа або
+        розділу. Зазвичай містить заголовки, навігацію, логотипи, пошукові форми
+        або інші елементи, які пов’язані з початком розділу.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;header&gt;
+      &lt;h1&gt;Мій сайт&lt;/h1&gt;
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Головна&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Про нас&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Контакти&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>header {
+      display: block;
+    }</code></pre>
+      <p>За замовчуванням — блочний елемент.</p>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>будь-який вміст, типово — заголовки, навігація, інші блоки</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>
+          Підтримує всі глобальні атрибути HTML, наприклад <code>id</code>,
+          <code>class</code>, <code>style</code>, <code>title</code> тощо.
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Важливо не вкладати більше ніж один <code>&lt;header&gt;</code> у один
+        розділ або статтю. Застосування правильних заголовків і семантики
+        покращує доступність.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>
+        Підтримується усіма сучасними браузерами, включно з IE11 (частково).
+      </p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Вкладення <code>&lt;header&gt;</code> всередину
+          <code>&lt;header&gt;</code> без логічної структури.
+        </li>
+        <li>
+          Використання тегу <code>&lt;header&gt;</code> для всього вмісту
+          сторінки, замість лише заголовка.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте <code>&lt;header&gt;</code> для групування заголовків і
+          навігаційних елементів.
+        </li>
+        <li>Уникайте надмірного вкладення.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Часто містить <code>&lt;nav&gt;</code>,
+        <code>&lt;h1&gt;-&lt;h6&gt;</code>, <code>&lt;img&gt;</code> (логотип),
+        інші структурні елементи.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Якщо потрібен заголовок для всього документа, використовуйте
+        <code>&lt;header&gt;</code> у <code>&lt;body&gt;</code>. Для внутрішніх
+        секцій — можна використовувати <code>&lt;section&gt;</code> із власним
+        <code>&lt;header&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Введений у HTML5.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Правильне використання <code>&lt;header&gt;</code> допомагає
+        структурувати контент для пошукових систем.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;header&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-header-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;header&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <main>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;main&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;main&gt;</code> визначає головний контент документа
+        або веб-додатку. Він містить контент, який є унікальним для сторінки,
+        відмінним від навігації, заголовків, підвалів або повторюваних блоків.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;body&gt;
+  &lt;header&gt;...&lt;/header&gt;
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;h1&gt;Заголовок статті&lt;/h1&gt;
+      &lt;p&gt;Основний текст контенту...&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;...&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>main {
+  display: block;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>будь-який вміст, який є унікальним і основним на сторінці</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>
+          Підтримує всі глобальні атрибути (id, class, style, title і т.д.)
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Тег <code>&lt;main&gt;</code> полегшує навігацію для скрінрідерів,
+        вказуючи основний вміст сторінки.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>
+        Підтримка у всіх сучасних браузерах, у тому числі Edge, Chrome, Firefox,
+        Safari.
+      </p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання більше одного <code>&lt;main&gt;</code> на сторінці (❌
+          недопустимо).
+        </li>
+        <li>
+          Вкладення <code>&lt;main&gt;</code> у <code>&lt;article&gt;</code> чи
+          інший розділ (❌ не рекомендовано).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте <code>&lt;main&gt;</code> лише один раз на сторінці.
+        </li>
+        <li>
+          Не вкладайте у <code>&lt;main&gt;</code> блоки, які повторюються на
+          всіх сторінках, наприклад навігацію чи футер.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Зазвичай розміщується після <code>&lt;header&gt;</code> і перед
+        <code>&lt;footer&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Немає альтернатив; тег <code>&lt;main&gt;</code> — спеціальний для
+        головного контенту.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Введений у HTML5.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Допомагає пошуковим системам ідентифікувати основний контент сторінки.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;main&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-main-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;main&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <section>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;section&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;section&gt;</code> визначає розділ документа, який
+        тематично об'єднує контент. Використовується для групування пов’язаного
+        за темою вмісту.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;section&gt;
+  &lt;h2&gt;Наші послуги&lt;/h2&gt;
+  &lt;p&gt;Опис послуг компанії...&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>section {
+  display: block;
+  margin: 1em 0;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>будь-який вміст, логічно згрупований за темою</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>
+          Підтримує всі глобальні атрибути (id, class, style, title, aria-*
+          тощо)
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Рекомендовано використовувати з відповідними заголовками
+        (<code>&lt;h1&gt;-&lt;h6&gt;</code>) для покращення структури документа.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання <code>&lt;section&gt;</code> без тематичного змісту (❌
+          не рекомендується).
+        </li>
+        <li>
+          Вкладення <code>&lt;section&gt;</code> без заголовка (⚠️ краще
+          додавати заголовок).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте <code>&lt;section&gt;</code> для логічного розділення
+          контенту.
+        </li>
+        <li>
+          Завжди додавайте заголовок усередині <code>&lt;section&gt;</code>.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Часто містить <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code>,
+        <code>&lt;footer&gt;</code>, інші блочні елементи.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Для менших груп вмісту можна використовувати
+        <code>&lt;div&gt;</code> без семантики.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Введений у HTML5.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Допомагає пошуковим системам структурувати контент і покращує семантичне
+        розуміння сторінки.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;section&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-section-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;section&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <article>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;article&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;article&gt;</code> визначає самостійний, автономний
+        контент, який може бути розповсюджений або використаний окремо від решти
+        сторінки. Наприклад, стаття, допис у блозі, новина, коментар, огляд.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;article&gt;
+  &lt;h2&gt;Огляд нової книги&lt;/h2&gt;
+  &lt;p&gt;Це огляд книги, який можна читати окремо від інших частин сайту.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>article {
+  display: block;
+  margin: 1em 0;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>будь-який вміст, який логічно представляє автономну одиницю</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>
+          Підтримує всі глобальні атрибути (id, class, style, title і т.д.)
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>Допомагає скрінрідерам розпізнати автономні частини контенту.</p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується у всіх сучасних браузерах.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання <code>&lt;article&gt;</code> для неавтономного контенту
+          (❌ неправильне застосування).
+        </li>
+        <li>
+          Вкладення <code>&lt;article&gt;</code> один в одного без потреби (❌
+          уникайте зайвого вкладення).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>Використовуйте для контенту, який може існувати окремо.</li>
+        <li>
+          Обов’язково додавайте заголовок усередині
+          <code>&lt;article&gt;</code>.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Може бути вкладений у <code>&lt;section&gt;</code>,
+        <code>&lt;main&gt;</code> або інші структурні контейнери.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Для менш структурованого вмісту можна використовувати
+        <code>&lt;div&gt;</code> без семантики.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Введений у HTML5.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Покращує структуру сторінки для пошукових систем, виділяючи автономні
+        частини контенту.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;article&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;article&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <aside>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;aside&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;aside&gt;</code> використовується для контенту, який є
+        побічним або додатковим по відношенню до основного вмісту документа чи
+        секції. Часто це бокова панель, цитати, посилання або віджети.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;article&gt;
+  &lt;h2&gt;Головна стаття&lt;/h2&gt;
+  &lt;p&gt;Основний контент тут...&lt;/p&gt;
+  &lt;aside&gt;
+    &lt;h3&gt;Корисні посилання&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Детальніше&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Ресурси&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/aside&gt;
+&lt;/article&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>aside {
+  display: block;
+  margin: 1em 0;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>
+          додатковий або побічний контент, не обов’язково пов’язаний з основним
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>
+          Підтримує всі глобальні атрибути (id, class, style, title, aria-*
+          тощо)
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Використання <code>&lt;aside&gt;</code> допомагає користувачам
+        скрінрідерів ідентифікувати додатковий контент.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання <code>&lt;aside&gt;</code> для основного контенту (❌
+          некоректно).
+        </li>
+        <li>
+          Вкладення <code>&lt;aside&gt;</code> всередину інших додаткових блоків
+          без потреби.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>Використовуйте для побічного контенту, який доповнює основний.</li>
+        <li>
+          Розміщуйте в контексті, де логічно відокремлює додаткову інформацію.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Зазвичай розташовується поруч із <code>&lt;article&gt;</code>,
+        <code>&lt;section&gt;</code> чи іншими блоками контенту.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Можна використовувати <code>&lt;div&gt;</code>, але втрачається
+        семантика додаткового вмісту.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Введений у HTML5.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Допомагає пошуковим системам розуміти структуру сторінки, виділяючи
+        додатковий контент.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;aside&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-aside-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;aside&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <footer>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;footer&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;footer&gt;</code> визначає футер (нижній колонтитул)
+        розділу або документа. Зазвичай містить інформацію про автора,
+        копірайти, посилання на контакти, політику конфіденційності тощо.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;footer&gt;
+  &lt;p&gt;© 2025 Компанія "Приклад". Всі права захищені.&lt;/p&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/privacy"&gt;Політика конфіденційності&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/contact"&gt;Контакти&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/footer&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>footer {
+  display: block;
+  margin: 1em 0;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>контент, пов’язаний із розділом або документом</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>
+          Підтримує всі глобальні атрибути HTML (id, class, style, title тощо)
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Футер допомагає користувачам скрінрідерів зрозуміти, де закінчується
+        розділ або сторінка.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується усіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання <code>&lt;footer&gt;</code> для інших частин сторінки,
+          крім нижнього колонтитулу (❌ не рекомендується).
+        </li>
+        <li>Вкладення одного футера в інший без логічної потреби.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>Використовуйте для інформації про автора, контакти, копірайти.</li>
+        <li>Уникайте надмірного вмісту у футері.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Зазвичай розташовується внизу <code>&lt;body&gt;</code> або всередині
+        секцій, статей.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Можна використати <code>&lt;div&gt;</code>, але втрачається семантика.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Введений у HTML5.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Покращує структуру сторінки та допомагає пошуковим системам краще
+        розуміти розміщення інформації.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;footer&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-footer-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;footer&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <nav>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;nav&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;nav&gt;</code> позначає розділ сторінки, який містить
+        навігаційні посилання на інші частини сайту або зовнішні ресурси.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="/home"&gt;Головна&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/about"&gt;Про нас&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/contact"&gt;Контакти&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>nav {
+  display: block;
+  margin: 1em 0;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>колекція навігаційних посилань</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>
+          Підтримує всі глобальні атрибути (id, class, style, title, aria-*
+          тощо)
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>Допомагає користувачам скрінрідерів швидко переходити до навігації.</p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується усіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання <code>&lt;nav&gt;</code> для невеликих груп посилань, які
+          не є навігаційними (❌ уникайте).
+        </li>
+        <li>Вкладення одного <code>&lt;nav&gt;</code> у інший без потреби.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте для основної навігації сайту або великих навігаційних
+          блоків.
+        </li>
+        <li>
+          Не обробляйте як навігацію дрібні групи посилань, наприклад соцмережі.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Може містити <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>,
+        <code>&lt;a&gt;</code> та інші навігаційні елементи.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Для простих груп посилань можна використовувати
+        <code>&lt;div&gt;</code>, але без семантики навігації.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Введений у HTML5.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>Покращує індексацію навігаційних посилань пошуковими системами.</p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;nav&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-nav-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: &lt;nav&gt;</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <h1>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;h1&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;h1&gt;</code> задає найвищий рівень заголовка в
+        HTML-документі. Використовується для позначення основної теми сторінки
+        або розділу.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;h1&gt;Вітаємо на нашому сайті&lt;/h1&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>h1 {
+  display: block;
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-weight: bold;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>Поточний текст або інлайн-елементи, які утворюють заголовок</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>
+          Підтримує всі глобальні атрибути (id, class, style, title, aria-*
+          тощо)
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Заголовки допомагають користувачам скрінрідерів орієнтуватися в
+        структурі сторінки.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання декількох тегів <code>&lt;h1&gt;</code> на одній сторінці
+          без логічної структури (⚠️ не рекомендується без сенсу).
+        </li>
+        <li>Використання заголовків поза контекстом структури документа.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте один <code>&lt;h1&gt;</code> для основного заголовка
+          сторінки (хоча HTML5 дозволяє кілька в різних секціях).
+        </li>
+        <li>
+          Дотримуйтесь логічної ієрархії заголовків (<code>&lt;h1&gt;</code>,
+          <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> тощо).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Зазвичай міститься у <code>&lt;header&gt;</code> або на початку
+        <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>Немає прямої альтернативи, заголовки мають важливу семантичну роль.</p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується з ранніх версій HTML.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Заголовки допомагають пошуковим системам розуміти структуру і тематику
+        сторінки.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/heading_Elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: Заголовки (h1–h6)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec: Заголовки</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <h2>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;h2&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;h2&gt;</code> представляє заголовок другого рівня.
+        Зазвичай використовується для позначення підрозділів основного заголовка
+        <code>&lt;h1&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;h1&gt;Про компанію&lt;/h1&gt;
+    &lt;h2&gt;Наша історія&lt;/h2&gt;
+    &lt;h2&gt;Наша місія&lt;/h2&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>h2 {
+      display: block;
+      font-size: 1.5em;
+      margin: 0.75em 0;
+      font-weight: bold;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>текст або інлайн-елементи</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Підтримує всі глобальні атрибути</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Сприймається скрінрідерами як другий за важливістю заголовок, покращуючи
+        навігацію.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Пропущена ієрархія заголовків (наприклад, <code>&lt;h2&gt;</code> без
+          <code>&lt;h1&gt;</code> — не критично, але не рекомендовано).
+        </li>
+        <li>
+          Використання для стилізації замість семантики (❌ краще
+          використовувати CSS).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Дотримуйтесь логічної структури: <code>&lt;h1&gt;</code> →
+          <code>&lt;h2&gt;</code> → <code>&lt;h3&gt;</code> тощо.
+        </li>
+        <li>Один розділ — один основний заголовок другого рівня.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Використовується всередині <code>&lt;section&gt;</code>,
+        <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Інші заголовки: <code>&lt;h1&gt;</code> – <code>&lt;h6&gt;</code>.
+        Залежно від рівня вкладеності.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується з перших версій HTML.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>Допомагає пошуковим системам зрозуміти структуру вмісту сторінки.</p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: Заголовки (h1–h6)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <h3>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;h3&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;h3&gt;</code> задає заголовок третього рівня. Він
+        підпорядкований заголовку <code>&lt;h2&gt;</code> і використовується для
+        структурування підрозділів усередині розділів другого рівня.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;h1&gt;Документація&lt;/h1&gt;
+    &lt;h2&gt;HTML&lt;/h2&gt;
+    &lt;h3&gt;Заголовки&lt;/h3&gt;
+    &lt;h3&gt;Списки&lt;/h3&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>h3 {
+      display: block;
+      font-size: 1.17em;
+      margin: 1em 0;
+      font-weight: bold;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>текст або інлайн-елементи</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Підтримує всі глобальні атрибути</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Покращує структуру документа для скрінрідерів, що дозволяє легше
+        орієнтуватися у вкладених розділах.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Пропуск логічної структури: <code>&lt;h3&gt;</code> без попереднього
+          <code>&lt;h2&gt;</code>.
+        </li>
+        <li>
+          Використання для візуального оформлення замість логічної структури (❌
+          краще стилізувати інші теги CSS).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте лише після <code>&lt;h2&gt;</code>, щоб зберігати
+          логічну ієрархію.
+        </li>
+        <li>Не пропускайте рівні заголовків без потреби.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Часто вживається всередині <code>&lt;section&gt;</code>,
+        <code>&lt;article&gt;</code>, <code>&lt;details&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Інші заголовки — <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>,
+        <code>&lt;h4&gt;</code> тощо, залежно від рівня вкладеності.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується з перших версій HTML.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Дозволяє пошуковим системам краще зрозуміти структуру та контент
+        сторінки.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: Heading elements</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <h4>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;h4&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;h4&gt;</code> задає заголовок четвертого рівня, що
+        слугує підзаголовком всередині розділів, позначених
+        <code>&lt;h3&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;h2&gt;Компоненти&lt;/h2&gt;
+    &lt;h3&gt;Віджет користувача&lt;/h3&gt;
+    &lt;h4&gt;Аватар користувача&lt;/h4&gt;
+    &lt;h4&gt;Ім’я користувача&lt;/h4&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>h4 {
+      display: block;
+      font-size: 1em;
+      margin: 1.33em 0;
+      font-weight: bold;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>текст, інлайн-елементи</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Підтримує всі глобальні атрибути</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Чітко визначає вкладену структуру для скрінрідерів і доступних
+        інтерфейсів.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Повна підтримка всіма основними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання <code>&lt;h4&gt;</code> без попередніх заголовків
+          <code>&lt;h2&gt;</code> або <code>&lt;h3&gt;</code>.
+        </li>
+        <li>
+          Використання для стилізації замість логічного структурування (❌ краще
+          використовувати CSS-класи).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>Використовуйте для підрозділів <code>&lt;h3&gt;</code>.</li>
+        <li>
+          Дотримуйтеся логічної послідовності заголовків (без стрибків по
+          рівнях).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Часто використовується в <code>&lt;section&gt;</code>,
+        <code>&lt;article&gt;</code> або вкладених блоках контенту.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Вище — <code>&lt;h3&gt;</code>, нижче — <code>&lt;h5&gt;</code>.
+        Альтернатив немає, якщо важлива структура документа.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується з перших версій HTML.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Заголовки нижчих рівнів також враховуються пошуковими системами для
+        структурування контенту.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: Heading elements</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <h5>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;h5&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;h5&gt;</code> використовується для створення заголовків
+        п’ятого рівня, які є підрозділами заголовків <code>&lt;h4&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;h2&gt;Керівництво користувача&lt;/h2&gt;
+    &lt;h3&gt;Розділ 1: Основи&lt;/h3&gt;
+    &lt;h4&gt;Інтерфейс&lt;/h4&gt;
+    &lt;h5&gt;Меню налаштувань&lt;/h5&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>h5 {
+      display: block;
+      font-size: 0.83em;
+      margin: 1.67em 0;
+      font-weight: bold;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>текст, інлайн-елементи</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Підтримує всі глобальні атрибути</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Допомагає користувачам із порушеннями зору орієнтуватись у структурі
+        сторінки за допомогою скрінрідерів.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Повна підтримка всіма браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Пропуск рівнів заголовків (наприклад, <code>&lt;h5&gt;</code> після
+          <code>&lt;h2&gt;</code>).
+        </li>
+        <li>
+          Використання <code>&lt;h5&gt;</code> для стилізації, а не структури
+          (❌ краще стилізувати звичайні теги).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте лише в логічній вкладеності (після
+          <code>&lt;h4&gt;</code>).
+        </li>
+        <li>Не перескакуйте рівні заголовків без потреби.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Є частиною заголовкової ієрархії (від <code>&lt;h1&gt;</code> до
+        <code>&lt;h6&gt;</code>). Зазвичай знаходиться всередині
+        <code>&lt;section&gt;</code> або <code>&lt;article&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Інші заголовки: <code>&lt;h1&gt;</code>…<code>&lt;h6&gt;</code>, залежно
+        від структури.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується з перших версій HTML.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Хоча менш важливий, ніж <code>&lt;h1&gt;</code>, все одно враховується
+        пошуковими системами як частина структури.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: Heading elements</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <h6>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;h6&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;h6&gt;</code> — це заголовок найнижчого рівня. Він
+        використовується для позначення найглибших підрозділів у структурі
+        документа. Семантичне значення зберігається, навіть якщо його зовнішній
+        вигляд схожий на звичайний текст.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;h1&gt;Продукт&lt;/h1&gt;
+&lt;h2&gt;Модулі&lt;/h2&gt;
+&lt;h3&gt;Користувачі&lt;/h3&gt;
+&lt;h4&gt;Форма реєстрації&lt;/h4&gt;
+&lt;h5&gt;Повідомлення про помилки&lt;/h5&gt;
+&lt;h6&gt;Мікротекст під інпутом&lt;/h6&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>h6 {
+  display: block;
+  font-size: 0.67em;
+  margin: 2.33em 0;
+  font-weight: bold;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>текст, інлайн-елементи</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Підтримує всі глобальні атрибути</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Допомагає людям з порушенням зору розуміти ієрархію сторінки за
+        допомогою скрінрідерів.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма браузерами, без винятків.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання <code>&lt;h6&gt;</code> без попередніх заголовків
+          (логічна послідовність порушена).
+        </li>
+        <li>
+          Застосування лише задля зменшеного розміру тексту — ❌ використовуйте
+          CSS для цього.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте <code>&lt;h6&gt;</code> лише у вкладених структурованих
+          підрозділах.
+        </li>
+        <li>
+          Для візуального оформлення краще використовувати стилі, а не
+          низькорівневий заголовок.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Є частиною ієрархії заголовків <code>&lt;h1&gt;</code> →
+        <code>&lt;h6&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Інші заголовкові теги: <code>&lt;h1&gt;</code>–<code>&lt;h5&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується у всіх версіях HTML.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Має незначний вплив на SEO, але допомагає у структуризації вмісту для
+        пошукових систем.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: Heading elements</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--Тепер логічно перейти до контентних тегів, які часто використовуються всередині цих секцій.-->
+  <h1>
+    Тепер логічно перейти до контентних тегів, які часто використовуються
+    всередині цих секцій.
+  </h1>
+
+  <!--HTML тег: <p>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;p&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;p&gt;</code> використовується для створення абзацу
+        тексту. Це один із найосновніших і найпоширеніших елементів HTML.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;p&gt;Це звичайний абзац тексту.&lt;/p&gt;
+&lt;p&gt;Це ще один абзац з окремим блоком.&lt;/p&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>текст, інлайн-елементи</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Так (id, class, style, lang, title тощо)</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Абзаци є логічними блоками тексту та полегшують сприйняття для
+        користувачів, які використовують скрінрідери.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма браузерами без винятку.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Вкладення блочних елементів у <code>&lt;p&gt;</code> — ❌ заборонено.
+        </li>
+        <li>
+          Забути закрити тег <code>&lt;p&gt;</code> — HTML5 пробачає, але не
+          рекомендується.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте <code>&lt;p&gt;</code> лише для абзаців, а не для
+          оформлення.
+        </li>
+        <li>Для додаткового форматування — застосовуйте CSS.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Всередині <code>&lt;p&gt;</code> дозволені лише
+        <strong>інлайн-елементи</strong> (наприклад, <code>&lt;span&gt;</code>,
+        <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code> тощо).
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Немає прямого семантичного аналога, хоча <code>&lt;div&gt;</code> або
+        <code>&lt;span&gt;</code> можуть бути використані зі стилізацією — ❌ не
+        рекомендується.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується в усіх версіях HTML з моменту створення мови.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Нейтральний, але важливий для читабельності тексту. Абзаци структурують
+        контент для пошукових систем.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;p&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-p-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <br>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;br&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;br&gt;</code> (line break) вставляє **перенос рядка**
+        всередині тексту. Не створює нового абзацу, а лише змушує текст
+        продовжуватися з нового рядка. Це **порожній елемент**, який не має
+        закриваючого тегу.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;p&gt;Привіт!&lt;br&gt;Як справи?&lt;/p&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>br {
+      display: inline;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>інлайн</dd>
+        <dt>Семантичний</dt>
+        <dd>ні</dd>
+        <dt>Вміст</dt>
+        <dd>немає (порожній елемент)</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Так</dd>
+        <dt>Спеціальні атрибути</dt>
+        <dd>немає</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Може бути нечітким для скрінрідерів. Використовуйте з обережністю,
+        особливо в довгих текстах. Для змістового розділення краще застосовувати
+        <code>&lt;p&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Повністю підтримується у всіх браузерах.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Надмірне використання замість <code>&lt;p&gt;</code> або CSS — ❌
+          погано для семантики.
+        </li>
+        <li>
+          Спроба вставити вміст усередину <code>&lt;br&gt;</code> — ❌ недійсно.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте для <strong>одиночних переносів</strong>, наприклад, у
+          поезії або контактних даних.
+        </li>
+        <li>Для абзаців — краще <code>&lt;p&gt;</code>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Використовується всередині <code>&lt;p&gt;</code>,
+        <code>&lt;td&gt;</code>, <code>&lt;div&gt;</code> та інших контейнерів
+        тексту.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        <code>&lt;p&gt;</code> або CSS (наприклад, <code>display: block;</code>,
+        <code>margin</code>) для змістовного відступу.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>
+        Підтримується з ранніх версій HTML. У HTML5 — дозволено як самозакривний
+        тег <code>&lt;br&gt;</code> або <code>&lt;br /&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Має <strong>нульовий семантичний вплив</strong>, тому не впливає на SEO.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;br&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-br-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>
+        <strong>спеціальний</strong> — порожній інлайн-елемент для переносів
+        рядка
+      </p>
+    </section>
+  </section>
+
+  <!--HTML тег: <hr>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;hr&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;hr&gt;</code> вставляє горизонтальну лінію, яка часто
+        використовується для тематичного розділення контенту. Це порожній
+        інлайн-блочний елемент.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;p&gt;Розділ 1 текст...&lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt;Розділ 2 текст...&lt;/p&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>hr {
+      display: block;
+      margin: 1em 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний, порожній</dd>
+        <dt>Семантичний</dt>
+        <dd>так — означає тематичний розрив</dd>
+        <dt>Вміст</dt>
+        <dd>немає (порожній елемент)</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Підтримуються</dd>
+        <dt>Спеціальні атрибути</dt>
+        <dd>немає</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Вказує на логічний розрив у контенті для користувачів допоміжних
+        технологій, таких як скрінрідери.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання <code>&lt;hr&gt;</code> лише як декоративної лінії без
+          семантичного навантаження — ❌ краще стилізувати CSS.
+        </li>
+        <li>Не вставляти всередину інтерактивних або інлайн елементів.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>Використовуйте для логічних розділів контенту.</li>
+        <li>
+          Стилізуйте через CSS замість додавання атрибутів, які зараз не
+          підтримуються.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Зазвичай використовується між <code>&lt;p&gt;</code>,
+        <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> та іншими
+        блоками.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Для декоративних ліній без семантики можна використати CSS (наприклад,
+        <code>border</code> або <code>background</code> на контейнері).
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується з HTML4 і пізніших версій.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Впливає на структуру сторінки, допомагаючи пошуковим системам розуміти
+        розділи.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;hr&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>
+        <strong>семантичний</strong> — розділювач контенту, порожній блочний
+        елемент
+      </p>
+    </section>
+  </section>
+
+  <!--HTML тег: <pre>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;pre&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Елемент <code>&lt;pre&gt;</code> використовується для відображення
+        попередньо відформатованого тексту, де зберігаються пробіли, відступи і
+        перенос рядків так, як вони вказані у вихідному коді.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;pre&gt;
+      function greet() {
+        console.log("Привіт, світ!");
+      }
+    &lt;/pre&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>pre {
+      display: block;
+      font-family: monospace, monospace;
+      white-space: pre;
+      margin: 1em 0;
+      overflow: auto;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>текст, інлайн-елементи</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Так</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Корисний для демонстрації коду або форматованих текстів, допомагає
+        користувачам зрозуміти структуру вихідного матеріалу.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання для простих абзаців замість <code>&lt;p&gt;</code> — ❌
+          не рекомендується.
+        </li>
+        <li>
+          Неврахування особливостей збереження пробілів і переносів рядків.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте для коду, виводів термінала або іншого тексту з
+          фіксованим форматуванням.
+        </li>
+        <li>
+          За потреби додавайте прокрутку через CSS (наприклад,
+          <code>overflow: auto;</code>).
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Часто використовується разом з тегом <code>&lt;code&gt;</code> для
+        позначення фрагментів коду.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Для форматованого коду можна використовувати <code>&lt;code&gt;</code>,
+        <code>&lt;samp&gt;</code> або <code>&lt;var&gt;</code> залежно від
+        контексту.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується з ранніх версій HTML.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Має незначний вплив, служить переважно для покращення читабельності
+        коду.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;pre&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-pre-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <blockquote>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;blockquote&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;blockquote&gt;</code> використовується для виділення
+        великої цитати або блоку тексту, який запозичено з іншого джерела.
+        Відображається як відступлений блок.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;blockquote&gt;
+      &lt;p&gt;Це цитата з іншого джерела.&lt;/p&gt;
+    &lt;/blockquote&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>blockquote {
+      display: block;
+      margin: 1em 40px;
+      padding-left: 1em;
+      border-left: 4px solid #ccc;
+      color: #666;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>блочний вміст</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Так</dd>
+        <dt>Спеціальні атрибути</dt>
+        <dd><code>cite</code> — посилання на джерело цитати</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Допомагає користувачам зрозуміти, що це цитата, особливо для тих, хто
+        використовує допоміжні технології.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання для коротких цитат — краще для них тег
+          <code>&lt;q&gt;</code>.
+        </li>
+        <li>
+          Відсутність атрибута <code>cite</code>, коли посилання на джерело
+          доступне.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>Використовуйте для великих цитат або блоків тексту.</li>
+        <li>
+          Додавайте атрибут <code>cite</code> з посиланням на джерело, якщо
+          можливо.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Інлайн-альтернатива — тег <code>&lt;q&gt;</code> для коротких цитат.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Інлайн-цитати — <code>&lt;q&gt;</code>. Для стилізації без семантики —
+        CSS-класи.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується з HTML4 і пізніших версій.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Додає структурованість контенту, допомагає пошуковикам розпізнавати
+        цитати.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;blockquote&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <q>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;q&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;q&gt;</code> використовується для коротких інлайн-цитат.
+        За замовчуванням браузери зазвичай додають лапки навколо тексту
+        всередині цього тегу.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;p&gt;Вона сказала: &lt;q&gt;Привіт!&lt;/q&gt;&lt;/p&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>q {
+      quotes: "«" "»" "„" "“";
+    }
+    q::before {
+      content: open-quote;
+    }
+    q::after {
+      content: close-quote;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>інлайн</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>текст, інлайн-елементи</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Так</dd>
+        <dt>Спеціальні атрибути</dt>
+        <dd><code>cite</code> — посилання на джерело цитати</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>Допомагає екранним читачам розпізнавати цитати.</p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання для великих блоків цитат — краще тег
+          <code>&lt;blockquote&gt;</code>.
+        </li>
+        <li>Ігнорування атрибута <code>cite</code>, коли можливо.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>Використовуйте для коротких інлайн-цитат.</li>
+        <li>
+          Додавайте атрибут <code>cite</code> для посилання на джерело, якщо є.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>Для великих цитат — тег <code>&lt;blockquote&gt;</code>.</p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Інші інлайн-теги для виділення тексту — <code>&lt;em&gt;</code>,
+        <code>&lt;strong&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується з HTML4 і пізніших версій.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Допомагає пошуковикам розпізнавати цитати, покращує семантику контенту.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;q&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-q-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <span>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;span&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;span&gt;</code> — це інлайн-контейнер без жодного власного
+        семантичного значення. Використовується для групування частин тексту чи
+        інших інлайн-елементів для застосування стилів або скриптів.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;p&gt;Це &lt;span style="color: red;"&gt;важливий&lt;/span&gt; текст.&lt;/p&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>span {
+      display: inline;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>інлайн</dd>
+        <dt>Семантичний</dt>
+        <dd>ні</dd>
+        <dt>Вміст</dt>
+        <dd>текст, інлайн-елементи</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Підтримуються</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Не має особливого семантичного навантаження, тому не впливає на
+        доступність напряму, але може допомогти структурувати вміст для
+        стилізації.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання тегу для створення блочних елементів — ❌ неправильне
+          використання.
+        </li>
+        <li>
+          Використання без потреби семантики або структуризації — краще
+          застосовувати семантичні теги.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте для стилізації або групування без зміни семантики.
+        </li>
+        <li>
+          Для блочних контейнерів застосовуйте теги як <code>&lt;div&gt;</code>.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>Може містити будь-які інлайн-елементи.</p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Якщо потрібна семантика, використовуйте відповідні теги, наприклад,
+        <code>&lt;em&gt;</code>, <code>&lt;strong&gt;</code>,
+        <code>&lt;mark&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується з ранніх версій HTML.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>Не має впливу на SEO.</p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;span&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <div>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;div&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;div&gt;</code> є блочним контейнером без семантичного
+        значення, призначеним для групування інших елементів для стилізації або
+        структуризації сторінки.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;div class="container"&gt;
+      &lt;p&gt;Текст всередині div.&lt;/p&gt;
+    &lt;/div&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>div {
+      display: block;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>ні</dd>
+        <dt>Вміст</dt>
+        <dd>будь-які елементи (блочні, інлайн)</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Підтримуються</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Без семантики, не впливає на доступність напряму, тому для
+        структуризації контенту рекомендується використовувати семантичні теги.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Зловживання <code>&lt;div&gt;</code> замість семантичних тегів (напр.,
+          <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>).
+        </li>
+        <li>Використання <code>&lt;div&gt;</code> для інлайн-вмісту.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте <code>&lt;div&gt;</code> для стилізації або логічного
+          групування, коли немає підходящого семантичного тегу.
+        </li>
+        <li>
+          Для структурування контенту віддавайте перевагу семантичним тегам.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>Може містити будь-які елементи, в тому числі інлайн та блочні.</p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Для структурування краще використовувати <code>&lt;section&gt;</code>,
+        <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code>,
+        <code>&lt;aside&gt;</code>, <code>&lt;header&gt;</code> тощо.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Підтримується з початкових версій HTML.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>Не має безпосереднього впливу, оскільки не має семантики.</p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;div&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <figure>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;figure&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;figure&gt;</code> використовується для групування
+        ілюстрацій, діаграм, фотографій, кодів чи інших графічних матеріалів з
+        підписом.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;figure&gt;
+      &lt;img src="image.jpg" alt="Опис зображення"&gt;
+      &lt;figcaption&gt;Підпис до зображення&lt;/figcaption&gt;
+    &lt;/figure&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>figure {
+      display: block;
+      margin: 1em 40px;
+    }
+    figcaption {
+      display: block;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>
+          будь-які елементи, зазвичай зображення, відео, код, і
+          <code>&lt;figcaption&gt;</code> (опціонально)
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Підтримуються</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Допомагає краще структурувати вміст і підписувати ілюстрації, що
+        покращує сприйняття контенту користувачами з обмеженими можливостями.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Відсутність тегу <code>&lt;figcaption&gt;</code> для пояснення змісту
+          ілюстрації.
+        </li>
+        <li>Використання для контенту, який не є ілюстративним.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Використовуйте для семантичного групування ілюстрацій з поясненнями.
+        </li>
+        <li>
+          Обов’язково додавайте <code>&lt;figcaption&gt;</code>, якщо потрібно
+          пояснити зображення або інший контент.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        <code>&lt;figcaption&gt;</code> — спеціальний тег для підпису вмісту
+        <code>&lt;figure&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Для зображень без підпису можна використовувати
+        <code>&lt;img&gt;</code> без <code>&lt;figure&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Починаючи з HTML5.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>
+        Покращує семантику сторінки, що допомагає пошуковим системам краще
+        індексувати ілюстративний контент.
+      </p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;figure&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <figcaption>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;figcaption&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;figcaption&gt;</code> використовується для підпису або
+        опису вмісту елемента <code>&lt;figure&gt;</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;figure&gt;
+      &lt;img src="image.jpg" alt="Опис зображення"&gt;
+      &lt;figcaption&gt;Це підпис до зображення.&lt;/figcaption&gt;
+    &lt;/figure&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>figcaption {
+      display: block;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>блочний</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>текст, інлайн-елементи</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Підтримуються</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>Покращує доступність, надаючи пояснення до ілюстративного контенту.</p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Використання поза межами <code>&lt;figure&gt;</code> — ❌ не
+          рекомендується.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Завжди розміщуйте <code>&lt;figcaption&gt;</code> всередині
+          <code>&lt;figure&gt;</code>.
+        </li>
+        <li>Використовуйте для пояснень ілюстрацій чи іншого медіаконтенту.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>Завжди знаходиться всередині <code>&lt;figure&gt;</code>.</p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>
+        Для підписів можна використовувати <code>&lt;caption&gt;</code> (для
+        таблиць) або звичайні <code>&lt;p&gt;</code> елементи без семантики.
+      </p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Починаючи з HTML5.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>Допомагає краще структуризувати контент із зображеннями.</p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;figcaption&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-figcaption-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>
+
+  <!--HTML тег: <time>-->
+  <section>
+    <h1>HTML тег: <span class="tag-name">&lt;time&gt;</span></h1>
+
+    <section>
+      <h2>Опис</h2>
+      <p>
+        Тег <code>&lt;time&gt;</code> використовується для позначення дат, часу
+        або тривалості в машинозчитуваному форматі, що дозволяє браузерам,
+        пошуковим системам і помічникам краще розуміти інформацію про час.
+      </p>
+    </section>
+
+    <section>
+      <h2>Приклад</h2>
+      <pre><code>&lt;p&gt;Публікація статті: &lt;time datetime="2025-06-29"&gt;29 червня 2025&lt;/time&gt;&lt;/p&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>CSS за замовчуванням</h2>
+      <pre><code>time {
+      display: inline;
+    }</code></pre>
+    </section>
+
+    <section>
+      <h2>Основні характеристики</h2>
+      <dl>
+        <dt>Тип</dt>
+        <dd>інлайн</dd>
+        <dt>Семантичний</dt>
+        <dd>так</dd>
+        <dt>Вміст</dt>
+        <dd>
+          текст (дата або час у форматі людини), може мати атрибут
+          <code>datetime</code> для машинозчитуваного формату
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Атрибути</h2>
+      <dl>
+        <dt>Глобальні атрибути</dt>
+        <dd>Підтримуються</dd>
+        <dt>datetime</dt>
+        <dd>
+          Обов’язковий для машинозчитуваного формату дати або часу, наприклад:
+          "2025-06-29", "2025-06-29T15:30"
+        </dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Доступність (a11y)</h2>
+      <p>
+        Допомагає користувачам і системам правильно інтерпретувати дату і час.
+      </p>
+    </section>
+
+    <section>
+      <h2>Підтримка браузерів</h2>
+      <p>Підтримується всіма сучасними браузерами.</p>
+    </section>
+
+    <section>
+      <h2>Поширені помилки</h2>
+      <ul>
+        <li>
+          Відсутність атрибута <code>datetime</code> для точного
+          машинозчитуваного формату.
+        </li>
+        <li>Використання для текстів, що не є датою або часом.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Кращі практики</h2>
+      <ul>
+        <li>
+          Завжди додавайте атрибут <code>datetime</code> з правильним форматом
+          ISO 8601.
+        </li>
+        <li>
+          Використовуйте для позначення дат, часу, тривалості, наприклад, у
+          подіях або новинах.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Зв’язки з іншими тегами</h2>
+      <p>
+        Може використовуватися в будь-яких елементах, де потрібна дата або час.
+      </p>
+    </section>
+
+    <section>
+      <h2>Семантичні альтернативи</h2>
+      <p>Немає повних альтернатив, це семантичний тег для часу.</p>
+    </section>
+
+    <section>
+      <h2>Сумісність з HTML версіями</h2>
+      <p>Починаючи з HTML5.</p>
+    </section>
+
+    <section>
+      <h2>SEO вплив</h2>
+      <p>Покращує індексацію дат та часу пошуковими системами.</p>
+    </section>
+
+    <section>
+      <h2>Додаткові посилання</h2>
+      <ul>
+        <li>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time"
+            target="_blank"
+            rel="noopener noreferrer"
+            >MDN: &lt;time&gt;</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element"
+            target="_blank"
+            rel="noopener noreferrer"
+            >HTML Spec</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Позначка</h2>
+      <p>— (без позначки)</p>
+    </section>
+  </section>

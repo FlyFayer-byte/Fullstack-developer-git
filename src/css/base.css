@@ -12,13 +12,19 @@ body {
 main {
   display: flex;
   flex: 1; /* Заповнює весь доступний простір між header і footer */
+  margin: 0 auto;
 }
 
-code {
+/* code {
   font-family: 'Fira Code', monospace;
   font-size: 0.875em;
   background-color: rgba(135, 131, 120, 0.15);
   color: #2f2f37;
   padding: 2px 0.5ch;
   border-radius: 3px;
+} */
+
+.content {
+  display: flex;
+  flex-direction: column;
 }
