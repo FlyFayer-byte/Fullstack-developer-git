@@ -1,107 +1,379 @@
 <style>
   body {
+    display: flex;
+    flex-direction: column;
+
     font-family: Arial, sans-serif;
     margin: 2em auto;
-    padding: 0 1em;
     background: #f9f9f9;
     color: #333;
+    line-height: 1.6;
   }
   h1 {
     color: #005a9c;
+    text-align: center;
   }
   ul {
-    padding-left: 1.2em;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style: none;
+    padding: 0;
   }
   li {
-    margin-bottom: 0.4em;
+    margin-bottom: 0.3em;
   }
   a {
-    color: #007acc;
     text-decoration: none;
+    color: #007acc;
   }
   a:hover {
     text-decoration: underline;
   }
   .category {
+    margin-top: 2em;
     font-weight: bold;
     font-size: 1.1em;
-    margin-top: 1em;
     color: #444;
   }
 </style>
+
 <nav>
-  <h1>📘 Зміст довідника HTML & CSS</h1>
+  <h1>Індекс HTML5 тегів</h1>
 
+  <div class="category">📄 Структура документа</div>
   <ul>
-    <li class="category">🔧 <strong>Теги head</strong></li>
-    <ul>
-      <li><a href="meta.html">&lt;meta&gt;</a></li>
-      <li><a href="link.html">&lt;link&gt;</a></li>
-      <li><a href="style.html">&lt;style&gt;</a></li>
-      <li><a href="script.html">&lt;script&gt;</a></li>
-    </ul>
+    <li><a href="#html">&lt;html&gt;</a></li>
+    <li><a href="#head">&lt;head&gt;</a></li>
+    <li><a href="#title">&lt;title&gt;</a></li>
+    <li><a href="#base">&lt;base&gt;</a></li>
+    <li><a href="#link">&lt;link&gt;</a></li>
+    <li><a href="#meta">&lt;meta&gt;</a></li>
+    <li><a href="#style">&lt;style&gt;</a></li>
+    <li><a href="#body">&lt;body&gt;</a></li>
+  </ul>
 
-    <li class="category">🏗️ <strong>Структурні теги</strong></li>
-    <ul>
-      <li><a href="html.html">&lt;html&gt;</a></li>
-      <li><a href="head.html">&lt;head&gt;</a></li>
-      <li><a href="body.html">&lt;body&gt;</a></li>
-      <li><a href="header.html">&lt;header&gt;</a></li>
-      <li><a href="main.html">&lt;main&gt;</a></li>
-      <li><a href="section.html">&lt;section&gt;</a></li>
-      <li><a href="article.html">&lt;article&gt;</a></li>
-      <li><a href="aside.html">&lt;aside&gt;</a></li>
-      <li><a href="footer.html">&lt;footer&gt;</a></li>
-    </ul>
+  <div class="category">📑 Секційні та семантичні теги</div>
+  <ul>
+    <li><a href="#header">&lt;header&gt;</a></li>
+    <li><a href="#nav">&lt;nav&gt;</a></li>
+    <li><a href="#main">&lt;main&gt;</a></li>
+    <li><a href="#section">&lt;section&gt;</a></li>
+    <li><a href="#article">&lt;article&gt;</a></li>
+    <li><a href="#aside">&lt;aside&gt;</a></li>
+    <li><a href="#footer">&lt;footer&gt;</a></li>
+    <li><a href="#address">&lt;address&gt;</a></li>
+  </ul>
 
-    <li class="category">🧱 <strong>Базові теги контенту</strong></li>
-    <ul>
-      <li><a href="h1-h6.html">&lt;h1&gt;–&lt;h6&gt;</a></li>
-      <li><a href="p.html">&lt;p&gt;</a></li>
-      <li><a href="div.html">&lt;div&gt;</a></li>
-      <li><a href="span.html">&lt;span&gt;</a></li>
-      <li><a href="hr.html">&lt;hr&gt;</a></li>
-      <li><a href="br.html">&lt;br&gt;</a></li>
-    </ul>
+  <div class="category">📦 Блоки та контейнери</div>
+  <ul>
+    <li><a href="#div">&lt;div&gt;</a></li>
+    <li><a href="#span">&lt;span&gt;</a></li>
+  </ul>
 
-    <li class="category">🧭 <strong>Навігація</strong></li>
-    <ul>
-      <li><a href="nav.html">&lt;nav&gt;</a></li>
-      <li><a href="a.html">&lt;a&gt;</a></li>
-      <li><a href="ul-ol-li.html">&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</a></li>
-    </ul>
+  <div class="category">📝 Текст і форматування</div>
+  <ul>
+    <li><a href="#h1">&lt;h1&gt;</a> ... <a href="#h6">&lt;h6&gt;</a></li>
+    <li><a href="#p">&lt;p&gt;</a></li>
+    <li><a href="#br">&lt;br&gt;</a></li>
+    <li><a href="#hr">&lt;hr&gt;</a></li>
+    <li><a href="#strong">&lt;strong&gt;</a></li>
+    <li><a href="#em">&lt;em&gt;</a></li>
+    <li><a href="#b">&lt;b&gt;</a></li>
+    <li><a href="#i">&lt;i&gt;</a></li>
+    <li><a href="#mark">&lt;mark&gt;</a></li>
+    <li><a href="#small">&lt;small&gt;</a></li>
+    <li><a href="#del">&lt;del&gt;</a></li>
+    <li><a href="#ins">&lt;ins&gt;</a></li>
+    <li><a href="#sub">&lt;sub&gt;</a></li>
+    <li><a href="#sup">&lt;sup&gt;</a></li>
+    <li><a href="#blockquote">&lt;blockquote&gt;</a></li>
+    <li><a href="#q">&lt;q&gt;</a></li>
+    <li><a href="#cite">&lt;cite&gt;</a></li>
+    <li><a href="#abbr">&lt;abbr&gt;</a></li>
+    <li><a href="#code">&lt;code&gt;</a></li>
+    <li><a href="#pre">&lt;pre&gt;</a></li>
+    <li><a href="#kbd">&lt;kbd&gt;</a></li>
+  </ul>
 
-    <li class="category">📝 <strong>Форми</strong></li>
-    <ul>
-      <li><a href="form.html">&lt;form&gt;</a></li>
-      <li><a href="input.html">&lt;input&gt;</a></li>
-      <li><a href="textarea.html">&lt;textarea&gt;</a></li>
-      <li><a href="select.html">&lt;select&gt;</a></li>
-      <li><a href="button.html">&lt;button&gt;</a></li>
-      <li><a href="label.html">&lt;label&gt;</a></li>
-      <li><a href="fieldset.html">&lt;fieldset&gt;</a></li>
-      <li><a href="legend.html">&lt;legend&gt;</a></li>
-    </ul>
+  <div class="category">🔗 Посилання та навігація</div>
+  <ul>
+    <li><a href="#a">&lt;a&gt;</a></li>
+  </ul>
 
-    <li class="category">📷 <strong>Медіа</strong></li>
-    <ul>
-      <li><a href="img.html">&lt;img&gt;</a></li>
-      <li><a href="picture.html">&lt;picture&gt;</a></li>
-      <li><a href="audio.html">&lt;audio&gt;</a></li>
-      <li><a href="video.html">&lt;video&gt;</a></li>
-      <li><a href="iframe.html">&lt;iframe&gt;</a></li>
-    </ul>
+  <div class="category">📋 Списки</div>
+  <ul>
+    <li><a href="#ul">&lt;ul&gt;</a></li>
+    <li><a href="#ol">&lt;ol&gt;</a></li>
+    <li><a href="#li">&lt;li&gt;</a></li>
+    <li><a href="#dl">&lt;dl&gt;</a></li>
+    <li><a href="#dt">&lt;dt&gt;</a></li>
+    <li><a href="#dd">&lt;dd&gt;</a></li>
+  </ul>
 
-    <li class="category">🎨 <strong>Службові CSS-властивості</strong></li>
-    <ul>
-      <li><a href="css-display.html">display</a></li>
-      <li><a href="css-position.html">position</a></li>
-      <li><a href="css-margin-padding.html">margin / padding</a></li>
-      <li><a href="css-color.html">color / background-color</a></li>
-      <li><a href="css-font.html">font / font-size / font-family</a></li>
-      <li><a href="css-flex.html">flex / flexbox</a></li>
-      <li><a href="css-grid.html">grid / grid-template</a></li>
-      <li><a href="css-animation.html">transition / animation</a></li>
-    </ul>
+  <div class="category">🖼️ Медіа</div>
+  <ul>
+    <li><a href="#img">&lt;img&gt;</a></li>
+    <li><a href="#figure">&lt;figure&gt;</a></li>
+    <li><a href="#figcaption">&lt;figcaption&gt;</a></li>
+    <li><a href="#audio">&lt;audio&gt;</a></li>
+    <li><a href="#video">&lt;video&gt;</a></li>
+    <li><a href="#source">&lt;source&gt;</a></li>
+    <li><a href="#track">&lt;track&gt;</a></li>
+  </ul>
+
+  <div class="category">📆 Дата і час</div>
+  <ul>
+    <li><a href="#time">&lt;time&gt;</a></li>
+  </ul>
+
+  <div class="category">🧩 Форми</div>
+  <ul>
+    <li><a href="#form">&lt;form&gt;</a></li>
+    <li><a href="#input">&lt;input&gt;</a></li>
+    <li><a href="#label">&lt;label&gt;</a></li>
+    <li><a href="#textarea">&lt;textarea&gt;</a></li>
+    <li><a href="#select">&lt;select&gt;</a></li>
+    <li><a href="#option">&lt;option&gt;</a></li>
+    <li><a href="#optgroup">&lt;optgroup&gt;</a></li>
+    <li><a href="#button">&lt;button&gt;</a></li>
+    <li><a href="#fieldset">&lt;fieldset&gt;</a></li>
+    <li><a href="#legend">&lt;legend&gt;</a></li>
+    <li><a href="#datalist">&lt;datalist&gt;</a></li>
+    <li><a href="#output">&lt;output&gt;</a></li>
+    <li><a href="#meter">&lt;meter&gt;</a></li>
+    <li><a href="#progress">&lt;progress&gt;</a></li>
+  </ul>
+
+  <div class="category">📊 Таблиці</div>
+  <ul>
+    <li><a href="#table">&lt;table&gt;</a></li>
+    <li><a href="#caption">&lt;caption&gt;</a></li>
+    <li><a href="#thead">&lt;thead&gt;</a></li>
+    <li><a href="#tbody">&lt;tbody&gt;</a></li>
+    <li><a href="#tfoot">&lt;tfoot&gt;</a></li>
+    <li><a href="#tr">&lt;tr&gt;</a></li>
+    <li><a href="#th">&lt;th&gt;</a></li>
+    <li><a href="#td">&lt;td&gt;</a></li>
+    <li><a href="#colgroup">&lt;colgroup&gt;</a></li>
+    <li><a href="#col">&lt;col&gt;</a></li>
+  </ul>
+
+  <div class="category">🧠 Інтерактивність</div>
+  <ul>
+    <li><a href="#details">&lt;details&gt;</a></li>
+    <li><a href="#summary">&lt;summary&gt;</a></li>
+    <li><a href="#dialog">&lt;dialog&gt;</a></li>
+  </ul>
+
+  <div class="category">⚙️ Службові теги / скрипти</div>
+  <ul>
+    <li><a href="#script">&lt;script&gt;</a></li>
+    <li><a href="#noscript">&lt;noscript&gt;</a></li>
+    <li><a href="#template">&lt;template&gt;</a></li>
+    <li><a href="#slot">&lt;slot&gt;</a></li>
+  </ul>
+
+  <div class="category">📦 Вбудовані об'єкти</div>
+  <ul>
+    <li><a href="#iframe">&lt;iframe&gt;</a></li>
+    <li><a href="#embed">&lt;embed&gt;</a></li>
+    <li><a href="#object">&lt;object&gt;</a></li>
+    <li><a href="#param">&lt;param&gt;</a></li>
+    <li><a href="#canvas">&lt;canvas&gt;</a></li>
+    <li><a href="#svg">&lt;svg&gt;</a></li>
+    <li><a href="#math">&lt;math&gt;</a></li>
   </ul>
 </nav>
+
+<!-- <!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<title>HTML Теги - Довідник</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; max-width: 900px; margin: auto; background: #f4f4f4; }
+  table { width: 100%; border-collapse: collapse; background: white; }
+  th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+  th { background: #007acc; color: white; cursor: pointer; }
+  input[type="text"] { width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; }
+  .icon-yes { color: green; font-weight: bold; }
+  .icon-no { color: red; font-weight: bold; }
+  .icon-exp { color: orange; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>Довідник HTML тегів</h1>
+<p>Фільтр: <input type="text" id="filterInput" placeholder="Пошук тегів, категорій..."></p>
+
+<table id="tagsTable">
+<thead>
+<tr>
+  <th>Тег</th>
+  <th>Категорія</th>
+  <th>Self-closing</th>
+  <th>Inline</th>
+  <th>Block</th>
+  <th>Experimental</th>
+</tr>
+</thead>
+<tbody>  -->
+<!-- Табличні рядки вставляються тут через JS -->
+<!-- </tbody>
+</table>
+
+<script>
+const tags = [
+  {"tag":"a","category":"Base","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"abbr","category":"Base","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"address","category":"Semantic","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"area","category":"Base","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"article","category":"Semantic","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"aside","category":"Semantic","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"audio","category":"Media","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"b","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"base","category":"Meta","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"bdi","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"bdo","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"blockquote","category":"Text","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"body","category":"Structure","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"br","category":"Text","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"button","category":"Form","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"canvas","category":"Graphics","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"caption","category":"Table","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"cite","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"code","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"col","category":"Table","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"colgroup","category":"Table","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"data","category":"Form","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"datalist","category":"Form","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"dd","category":"List","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"del","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"details","category":"Interactive","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"dfn","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"dialog","category":"Experimental","self_closing":false,"inline":false,"block":true,"experimental":true},
+  {"tag":"div","category":"Block","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"dl","category":"List","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"dt","category":"List","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"em","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"embed","category":"Media","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"fieldset","category":"Form","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"figcaption","category":"Media","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"figure","category":"Media","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"footer","category":"Semantic","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"form","category":"Form","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"h1","category":"Text","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"h2","category":"Text","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"h3","category":"Text","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"h4","category":"Text","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"h5","category":"Text","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"h6","category":"Text","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"head","category":"Structure","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"header","category":"Semantic","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"hgroup","category":"Experimental","self_closing":false,"inline":false,"block":true,"experimental":true},
+  {"tag":"hr","category":"Text","self_closing":true,"inline":false,"block":true,"experimental":false},
+  {"tag":"html","category":"Structure","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"i","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"iframe","category":"Embed","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"img","category":"Media","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"input","category":"Form","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"ins","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"kbd","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"label","category":"Form","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"legend","category":"Form","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"li","category":"List","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"link","category":"Meta","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"main","category":"Semantic","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"map","category":"Media","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"mark","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"meta","category":"Meta","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"meter","category":"Form","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"nav","category":"Semantic","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"noscript","category":"Meta","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"object","category":"Embed","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"ol","category":"List","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"optgroup","category":"Form","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"option","category":"Form","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"output","category":"Form","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"p","category":"Text","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"param","category":"Meta","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"picture","category":"Experimental","self_closing":false,"inline":false,"block":true,"experimental":true},
+  {"tag":"pre","category":"Text","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"progress","category":"Form","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"q","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"rp","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"rt","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"rtc","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"ruby","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"s","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"samp","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"script","category":"Meta","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"section","category":"Semantic","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"select","category":"Form","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"slot","category":"Experimental","self_closing":false,"inline":false,"block":true,"experimental":true},
+  {"tag":"small","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"source","category":"Media","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"span","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"strong","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"style","category":"Meta","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"sub","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"summary","category":"Interactive","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"sup","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"table","category":"Table","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"tbody","category":"Table","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"td","category":"Table","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"template","category":"Experimental","self_closing":false,"inline":false,"block":true,"experimental":true},
+  {"tag":"textarea","category":"Form","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"tfoot","category":"Table","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"th","category":"Table","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"thead","category":"Table","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"time","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"title","category":"Structure","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"tr","category":"Table","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"track","category":"Media","self_closing":true,"inline":true,"block":false,"experimental":false},
+  {"tag":"u","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"ul","category":"List","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"var","category":"Text","self_closing":false,"inline":true,"block":false,"experimental":false},
+  {"tag":"video","category":"Media","self_closing":false,"inline":false,"block":true,"experimental":false},
+  {"tag":"wbr","category":"Experimental","self_closing":true,"inline":true,"block":false,"experimental":true}
+];
+
+function renderIcon(val, type) {
+  if(type === 'experimental') return val ? '<span class="icon-exp">🧪</span>' : '❌';
+  return val ? '<span class="icon-yes">✅</span>' : '<span class="icon-no">❌</span>';
+}
+
+function renderTable() {
+  const tbody = document.querySelector('#tagsTable tbody');
+  tbody.innerHTML = '';
+  tags.forEach(t => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>&lt;${t.tag}&gt;</td>
+      <td>${t.category}</td>
+      <td>${renderIcon(t.self_closing)}</td>
+      <td>${renderIcon(t.inline)}</td>
+      <td>${renderIcon(t.block)}</td>
+      <td>${renderIcon(t.experimental, 'experimental')}</td>
+    `;
+    tbody.appendChild(row);
+  });
+}
+
+function filterTable() {
+  const filter = document.getElementById('filterInput').value.toLowerCase();
+  const rows = document.querySelectorAll('#tagsTable tbody tr');
+  rows.forEach(row => {
+    const text = row.textContent.toLowerCase();
+    row.style.display = text.includes(filter) ? '' : 'none';
+  });
+}
+
+document.getElementById('filterInput').addEventListener('input', filterTable);
+
+renderTable();
+</script>
+
+</body>
+</html> --> -->
